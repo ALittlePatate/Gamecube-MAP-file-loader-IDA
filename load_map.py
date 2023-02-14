@@ -2,9 +2,6 @@ import ida_search
 import idc
 import tkinter.filedialog
 
-#global vars
-end_ea = idc.get_segm_end(0) #end address
-
 def rename_func(addr, function_name) : 
     if addr == idc.BADADDR :
         print("Bad address")
